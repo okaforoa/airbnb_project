@@ -1,0 +1,39 @@
+custom_postgres:
+  outputs:
+    dev:
+      dbname: destination_db
+      host: host.docker.internal
+      pass: secret
+      port: 5434
+      schema: public
+      threads: 1
+      type: postgres
+      user: postgres
+  target: dev
+dbt_project:
+  outputs:
+    dev:
+      dataset: dbt_project
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: /Users/olisa/.dbt/dbt-project.json
+      location: US
+      method: service-account
+      priority: interactive
+      project: dbt-project-451523
+      threads: 1
+      type: bigquery
+  target: dev
+dbtlearn:
+  outputs:
+    dev:
+      account: dgbfcwr-pd16659
+      database: AIRBNB
+      password: dbtPassword123
+      role: transform
+      schema: DEV
+      threads: 1
+      type: snowflake
+      user: dbt
+      warehouse: COMPUTE_WH
+  target: dev

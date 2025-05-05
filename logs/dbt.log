@@ -1,0 +1,205 @@
+[0m22:32:20.323840 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021051696690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002104F0242C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002104EA990A0>]}
+
+
+============================== 22:32:20.341569 | ceef8539-edd6-4161-92f0-370e0aba50c2 ==============================
+[0m22:32:20.341569 [info ] [MainThread]: Running with dbt=1.9.4
+[0m22:32:20.342587 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\olisa\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt init dbtlearn', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:32:20.401687 [debug] [MainThread]: Starter project path: C:\Users\olisa\OneDrive\Desktop\course\venv\Lib\site-packages\dbt\include\starter_project
+[0m22:32:20.410505 [info ] [MainThread]: 
+Your new dbt project "dbtlearn" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:32:20.412530 [info ] [MainThread]: Setting up your profile.
+[0m22:39:45.626049 [error] [MainThread]: Encountered an error:
+
+[0m22:39:45.631089 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\olisa\OneDrive\Desktop\course\venv\Lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\olisa\OneDrive\Desktop\course\venv\Lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\olisa\OneDrive\Desktop\course\venv\Lib\site-packages\dbt\cli\main.py", line 477, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\olisa\OneDrive\Desktop\course\venv\Lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "C:\Users\olisa\OneDrive\Desktop\course\venv\Lib\site-packages\dbt\task\init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "C:\Users\olisa\OneDrive\Desktop\course\venv\Lib\site-packages\dbt\task\init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\olisa\OneDrive\Desktop\course\venv\Lib\site-packages\dbt\task\init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\olisa\OneDrive\Desktop\course\venv\Lib\site-packages\dbt\task\init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "C:\Users\olisa\OneDrive\Desktop\course\venv\Lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\olisa\OneDrive\Desktop\course\venv\Lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m22:39:45.634104 [debug] [MainThread]: Command `dbt init` failed at 22:39:45.633111 after 445.59 seconds
+[0m22:39:45.635104 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021051538140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021052C08650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021053420170>]}
+[0m22:39:45.636095 [debug] [MainThread]: Flushing usage events
+[0m22:39:45.860840 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:48:08.189278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B147089B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B16E04BC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B17012C60>]}
+
+
+============================== 22:48:08.194831 | e26e71f4-2305-410c-ad51-e0e6503f90a7 ==============================
+[0m22:48:08.194831 [info ] [MainThread]: Running with dbt=1.9.4
+[0m22:48:08.195358 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\olisa\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:48:13.361301 [error] [MainThread]: Encountered an error:
+
+[0m22:48:13.367301 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\olisa\OneDrive\Desktop\course\venv\Lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\olisa\OneDrive\Desktop\course\venv\Lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\olisa\OneDrive\Desktop\course\venv\Lib\site-packages\dbt\cli\main.py", line 477, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\olisa\OneDrive\Desktop\course\venv\Lib\site-packages\dbt\task\init.py", line 324, in run
+    project_name = self.get_valid_project_name()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\olisa\OneDrive\Desktop\course\venv\Lib\site-packages\dbt\task\init.py", line 278, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\olisa\OneDrive\Desktop\course\venv\Lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\olisa\OneDrive\Desktop\course\venv\Lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m22:48:13.371317 [debug] [MainThread]: Command `dbt init` failed at 22:48:13.371317 after 5.44 seconds
+[0m22:48:13.372292 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B176822D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B1892AAE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B17763380>]}
+[0m22:48:13.373804 [debug] [MainThread]: Flushing usage events
+[0m22:48:14.041702 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:48:24.421086 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000282AF255BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000282AF422360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000282AD1251F0>]}
+
+
+============================== 22:48:24.426593 | 5df7e5c9-aed2-4f89-a8cd-14a0b8301944 ==============================
+[0m22:48:24.426593 [info ] [MainThread]: Running with dbt=1.9.4
+[0m22:48:24.426593 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\olisa\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init dbtlearn', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:48:24.439330 [debug] [MainThread]: Starter project path: C:\Users\olisa\OneDrive\Desktop\course\venv\Lib\site-packages\dbt\include\starter_project
+[0m22:48:24.450525 [info ] [MainThread]: 
+Your new dbt project "dbtlearn" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:48:24.451524 [info ] [MainThread]: Setting up your profile.
+[0m22:51:14.631899 [info ] [MainThread]: Profile dbtlearn written to C:\Users\olisa\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:51:14.635437 [debug] [MainThread]: Command `dbt init` succeeded at 22:51:14.635437 after 170.42 seconds
+[0m22:51:14.636190 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000282AFCEBA40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000282AFD16F00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000282ACC2D3D0>]}
+[0m22:51:14.637204 [debug] [MainThread]: Flushing usage events
+[0m22:51:14.753953 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:55:25.225803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AF2D3F380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AF2FC9CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AF2F13C20>]}
+
+
+============================== 22:55:25.229895 | f8781f70-3841-4dea-b134-3a3a56bffe7e ==============================
+[0m22:55:25.229895 [info ] [MainThread]: Running with dbt=1.9.4
+[0m22:55:25.231164 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\olisa\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m22:55:25.247636 [info ] [MainThread]: dbt version: 1.9.4
+[0m22:55:25.247636 [info ] [MainThread]: python version: 3.12.6
+[0m22:55:25.248634 [info ] [MainThread]: python path: C:\Users\olisa\OneDrive\Desktop\course\venv\Scripts\python.exe
+[0m22:55:25.248634 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m22:55:25.249546 [info ] [MainThread]: Using profiles dir at C:\Users\olisa\.dbt
+[0m22:55:25.249546 [info ] [MainThread]: Using profiles.yml file at C:\Users\olisa\.dbt\profiles.yml
+[0m22:55:25.249546 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\olisa\OneDrive\Desktop\course\dbt_project.yml
+[0m22:55:25.249546 [info ] [MainThread]: Configuration:
+[0m22:55:25.250754 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m22:55:25.251080 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:55:25.251080 [info ] [MainThread]: Required dependencies:
+[0m22:55:25.251080 [debug] [MainThread]: Executing "git --help"
+[0m22:55:25.287962 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:55:25.289443 [debug] [MainThread]: STDERR: "b''"
+[0m22:55:25.289443 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:55:25.289443 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m22:55:25.290565 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m22:55:25.290565 [info ] [MainThread]: dbt looked for a profiles.yml file in C:\Users\olisa\.dbt\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m22:55:25.290565 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\olisa\OneDrive\Desktop\course\dbt_project.yml> not found
+
+[0m22:55:25.291573 [debug] [MainThread]: Command `dbt debug` failed at 22:55:25.291573 after 0.29 seconds
+[0m22:55:25.291573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AF314BBC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AF4267770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AF1E52F60>]}
+[0m22:55:25.292573 [debug] [MainThread]: Flushing usage events
+[0m22:55:25.447378 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:57:10.432832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002163D849040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002163FF9DCA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216404C88F0>]}
+
+
+============================== 22:57:10.438601 | 20802c1b-e8e8-4b16-8b93-67c03c98c1d6 ==============================
+[0m22:57:10.438601 [info ] [MainThread]: Running with dbt=1.9.4
+[0m22:57:10.438601 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\olisa\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m22:57:10.449633 [info ] [MainThread]: dbt version: 1.9.4
+[0m22:57:10.450633 [info ] [MainThread]: python version: 3.12.6
+[0m22:57:10.451633 [info ] [MainThread]: python path: C:\Users\olisa\OneDrive\Desktop\course\venv\Scripts\python.exe
+[0m22:57:10.451633 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m22:57:10.454553 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.postgres'
+[0m22:57:10.456166 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.bigquery'
+[0m22:57:10.657000 [info ] [MainThread]: Using profiles dir at C:\Users\olisa\.dbt
+[0m22:57:10.658503 [info ] [MainThread]: Using profiles.yml file at C:\Users\olisa\.dbt\profiles.yml
+[0m22:57:10.659506 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\olisa\OneDrive\Desktop\course\dbt_project.yml
+[0m22:57:10.660511 [info ] [MainThread]: Configuration:
+[0m22:57:10.660511 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m22:57:10.661509 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:57:10.662524 [info ] [MainThread]: Required dependencies:
+[0m22:57:10.662524 [debug] [MainThread]: Executing "git --help"
+[0m22:57:10.693974 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:57:10.694490 [debug] [MainThread]: STDERR: "b''"
+[0m22:57:10.694490 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:57:10.694490 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m22:57:10.695506 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m22:57:10.696202 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "custom_postgres", target "dev" invalid: Runtime Error
+    Could not find adapter type postgres!
+
+Runtime Error
+  Credentials in profile "dbt_project", target "dev" invalid: Runtime Error
+    Could not find adapter type bigquery!
+
+
+[0m22:57:10.696202 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\olisa\OneDrive\Desktop\course\dbt_project.yml> not found
+
+[0m22:57:10.697206 [debug] [MainThread]: Command `dbt debug` failed at 22:57:10.697206 after 0.57 seconds
+[0m22:57:10.697206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216407A0B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021642537770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216406A0530>]}
+[0m22:57:10.697206 [debug] [MainThread]: Flushing usage events
+[0m22:57:10.886122 [debug] [MainThread]: An error was encountered while trying to flush usage events
