@@ -1,5 +1,5 @@
 
-# Airbnb Analytics Pipeline with dbt & Dagster
+# Airbnb Analytics Engineering Pipeline with dbt & Dagster
 
 This project is a comprehensive implementation of an end-to-end data transformation pipeline using **dbt (Data Build Tool)** and **Dagster**, inspired by the Udemy course *Complete dbt (Data Build Tool) Bootcamp: Zero to Hero*.
 It showcases best practices in analytics engineering, focusing on modularity, testing, documentation, and orchestration.
