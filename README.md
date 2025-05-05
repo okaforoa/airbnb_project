@@ -39,6 +39,7 @@ It emphasizes:
 │   │   ├── jobs.py             # Job definitions
 │   │   ├── schedules.py        # Schedule definitions
 │   │   └── sensors.py          # Sensor definitions
+├── LICENSE
 ├── README.md
 └── requirements.txt
 ```
